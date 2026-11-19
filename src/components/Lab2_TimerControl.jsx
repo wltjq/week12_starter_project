@@ -9,10 +9,17 @@ export default function Lab2TimerControl() {
     // TODO 1: running이 false면 타이머를 만들지 않기
     // TODO 2: running이 true면 setInterval로 1초마다 count 증가
     // TODO 3: Cleanup에서 clearInterval 호출
+    if(!running) return;
+    const id = setInterval(() => {
+      setCount(prev => prev + 1);
+    },1000);
+    return () => clearInterval(id);
   }, [running]);
 
   const reset = () => {
     // TODO 4: 타이머를 멈추고 count를 0으로 초기화
+    setRunning(false);
+    setCount(0);
   };
 
   return (
