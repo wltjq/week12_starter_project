@@ -9,7 +9,7 @@ body {
     "Apple SD Gothic Neo",
     "Malgun Gothic",
     sans-serif;
-  background: #f5f7fb;
+  background: lightgrey;
   color: #18243a;
 }
 .page {
@@ -63,7 +63,7 @@ body {
 .lab-panel {
   min-height: 345px;
   border: 1px solid #dfe5f0;
-  border-radius: 16px;
+  border-radius: 50px;
   background: white;
   padding: 28px;
   box-shadow: 0 8px 22px #273c6420;
